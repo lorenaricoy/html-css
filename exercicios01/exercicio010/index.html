@@ -15,5 +15,17 @@
         <source media="(max-width: 750px)" srcset="imagens/M.png" type="image/png">
         <img src="imagens/G.png" alt="Imagem flexível">
     </picture>
+
+    <h1>Audios</h1>
+    <p>Vamos reproduzir audios em HTML5</p>
+    <!--Uma forma de carregar audios-->
+    <audio src="media/Elvis Presley - Can't Help Falling In Love - Cópia.mp3" controls autoplay></audio>
+    
+    <!--Outra forma-->
+    <audio preload="metadata" controls autoplay>
+        <source src="media/Elvis Presley - Can't Help Falling In Love - Cópia.mp3" type="audio/mpeg">
+        <p>Infelizmente não é possível reproduzir o aúdio <a target="_blank" href="media/Elvis Presley - Can't Help Falling In Love - Cópia.mp3">Clique aqui para baixar o arquivo MP3 </a></p>
+    </audio>
+
 </body>
 </html>
