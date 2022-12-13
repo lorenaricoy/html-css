@@ -1,0 +1,28 @@
+@charset 'UTF-8';
+
+body{
+    font-family: Arial, sans-sefif;
+    font-size: 16px;
+    color: black;
+    background-color: rgb(221, 193, 248);
+}
+
+h1#principal{
+    text-align: center;
+    background-color: rgb(47, 8, 83);
+    color: white;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    font-weight: 600;
+    color: rgb(47, 8, 83);
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: rgb(87, 28, 143);
+}
