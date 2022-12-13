@@ -23,6 +23,18 @@ h1{
 h2{
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.5em;
-    font-weight: 300;
+    font-weight: 600;
     color: rgb(87, 28, 143);
+}
+
+.basico{
+    color: rgb(28, 143, 109);;
+}
+
+.intermediario{
+    color:  rgb(143, 135, 28);;
+}
+
+.avancado{
+    color:  rgb(143, 28, 28);;
 }

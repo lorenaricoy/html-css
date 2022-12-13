@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
+
+    <style>
+        body{
+            background-color: rgb(140, 221, 221);
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            padding-top: 5px;
+            margin: auto;
+            text-align: center;
+            border-radius: 10px;
+        }
+        header > nav >a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            text-align: left;
+            padding: 30px;
+        }
+
+        header > nav > a:hover{
+            text-decoration: underline;
+            color: rgb(140, 221, 221);
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px auto auto auto;
+            border-radius: 10px;
+        }
+
+        main > section{
+            background-color:  rgb(140, 221, 221);
+            margin: 5px;
+            padding: 5px;
+        }
+
+        main> section> article{
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        main>section>article>h2{
+            color:  rgb(97, 145, 145);
+        }
+
+        main>section>article>aside{
+            background-color: black;
+            color: white;
+            padding: auto;
+            margin: 0%;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <article class="noticias">
+                <h2>Novas notícias</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum magnam placeat fugit, praesentium provident minima odio ducimus omnis? Soluta, odio numquam quis eius quod id corrupti. Accusantium aliquam laudantium omnis.</p>
+                <aside>
+                    <p>Escrito por fulano</p>
+                </aside>
+            </article>
+            <article class="noticias">
+                <h2>Fofocas da semana</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A hic quibusdam aspernatur sed, nemo ad neque, natus vero repellat deleniti minus, consequuntur laudantium! Itaque, aperiam illum eligendi nam perspiciatis ratione?</p>
+                <aside>
+                    <p>Escrito por fulana</p>
+                </aside>
+            </article>
+            
+        </section>
+    </main>
+</body>
+</html>
