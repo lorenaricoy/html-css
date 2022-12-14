@@ -9,48 +9,55 @@
     src: url(fontes/idroid.otf) format(opentype);
 }
 
+:root{
+    --cor0: rgb(158, 250, 178);
+    --cor1: rgb(6, 83, 41);
+    --cor2: rgb(2, 29, 14);
+    --cor3: rgba(195, 250, 218, 0.822);
+}
+
 body{
-    background-color: rgb(158, 250, 178);
+    background-color: var(--cor0);
     height: 100%;
     padding: 0%;
     margin: 0%;
 }
 
 header{
-    background-image: linear-gradient(to bottom, rgb(14, 219, 100), rgb(2, 29, 14), rgb(1, 7, 3) 100%);
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor2), rgb(1, 7, 3) 100%);
     background-attachment: fixed;
     padding: 10px;
     padding-bottom: 5px;
     margin: 0px;
 }
 
-header>h1{
+h1{
     color: white;
     font-family:'bignoodle';
     font-weight: 200;
     text-align: center;
+    font-size: 3em;
 }
 
 header>p{
     color: white;
     font-family: Arial, sans-serif;
-    font-size: small;
+    font-size: 1.2em;
     text-align: center;
     padding-bottom: 10px;
+    max-width: 500px;
+    margin: auto;
 }
 
 header>nav>a{
     font-family: arial, sans-serif;
-    padding: 15px;
+    padding: 5px 15px 5px 15px;
     font-weight: 600;
     font-size: x-small;
     text-align: left;
     color: white;
     text-decoration: none;
-}
-
-header>nav>a:hover{
-    text-decoration: underline;
+    border-radius: 5px;
 }
 
 main{
@@ -60,42 +67,71 @@ main{
     font-weight: bold;
     padding: 15px;
     margin: auto;
-    width: 800px;
+    min-width: 320px;
+    max-width: 800px;
     box-shadow: 5px 5px 15px rgba(2, 29, 14, 0.438);
 }
 
-main>section> h2{
-    font-family: 'idroid';
-    color: rgb(2, 29, 14);
+picture>img{
+    width: 100%;
 }
 
-main>section>p{
+h2{
+    font-family: 'idroid';
+    color: var(--cor2);
+}
+
+p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
     font-weight: 600;
 }
 
-main>section>h3{
+h3{
     font-family: 'idroid';
-    background-color: rgba(195, 250, 218, 0.822);
+    background-color: var(--cor3);
     padding-left: 10px;
-    color: rgb(2, 29, 14);
+    color: var(--cor2);
 }
 
-main>section>p>a{
+a{
     text-decoration: none;
-    color: rgb(6, 83, 41);
+    color: var(--cor1);
+    padding: 0px 2px 0px 2px;
     font-weight: 800;
 }
 
-main>section>p>a:hover{
+a:hover{
     text-decoration: underline;
+    background-color: var(--cor0);
 }
 
-section#extras{
+div{
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    background-color: var(--cor1);
+    position: relative;
+    padding-bottom: 57.5%;
+}
+
+div>iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+}
+
+div#foto{
+    margin: auto;
+    text-align: center;
+    background-color: white;
+}
+
+aside{
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(168, 247, 203);
+    background-color: var(--cor0);
     font-family: Arial, Helvetica, sans-serif;
     font-size: smaller;
     margin-top: 0%;
@@ -104,7 +140,7 @@ section#extras{
 }
 
 p#extra{
-    background-color: rgb(7, 148, 70);
+    background-color: var(--cor1);
     font-weight: 300;
     font-size: small;
     padding-bottom: 0px;
@@ -114,21 +150,12 @@ p#extra{
     border-radius: 10px 10px 0px 0px;
 }
 
-section#extras>article#extra>p>a{
-    text-decoration: none;
-    color: rgb(6, 83, 41);
-    font-weight: 800;
-}
-
-section#extras>article#extra>p>a:hover{
-    text-decoration: underline
-}
-
-section#extras>article#extra>ul{
+ul{
     width: 50%;
+    columns: 2;
 }
 
-body>p{
+footer>p{
     background-color: black;
     color: white;
     font-size: smaller;
